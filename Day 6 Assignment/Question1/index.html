@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Employee</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                padding: 30px;
+            }
+            input[type=text] {
+                margin: 10px;
+                height: 40px;
+                text-indent: 20px;        
+            }
+            table{
+                margin-top:20px;
+                width: 80%;
+                border-collapse: collapse;
+                background-color:beige;
+            }
+            table,th,td,tr{
+                border: 1px solid black;
+            }
+            th,td{
+                padding: 5px;
+                text-align: center;
+                height:30px;
+            }
+            button{
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <form>
+            <label>Search</label><br>
+            <input type="text" id="empName" placeholder="Name" onkeyup="searchByName()"/>
+            <input type="text" id="empCity" placeholder="City" onkeyup="searchByCity()"/>
+            </form>
+        </div>
+        <div>
+            <table cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Sr.No.</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>City</th>
+                        <th>Salary</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="tdata"></tbody>
+            </table>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
